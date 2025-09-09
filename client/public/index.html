@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laser Tag</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#8B5CF6" />
+
+
+
+    <!-- SEO and Social Sharing (optional) -->
+    <meta name="description" content="Laser Tag Game - React-powered neon showdown" />
+    <meta property="og:title" content="Laser Tag Game" />
+    <meta property="og:image" content="%PUBLIC_URL%/preview.png" />
+    <meta property="og:description" content="Join the ultimate neon battle in this browser-based Laser Tag game." />
+  </head>
+  <body class="bg-black text-white overflow-hidden">
+    <!-- React mounts your app here -->
+    <div id="root"></div>
+
+    <!-- Optional: Preloader screen before React mounts -->
+    <div id="preloader">
+      <p class="text-pink-500 text-center mt-20 font-['Press Start 2P']">Loading Laser Tag...</p>
+    </div>
+
+    <script>
+      // Remove preloader once React is ready
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('preloader')?.remove();
+      });
+    </script>
+  </body>
+</html>
